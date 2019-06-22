@@ -1,0 +1,4 @@
+--liquibase formatted sql
+
+--changeset zrashwani:1556524882130-1
+CREATE TABLE users (id BIGINT AUTO_INCREMENT NOT NULL, username VARCHAR(255) NOT NULL, `description` VARCHAR(500) NULL, CONSTRAINT PK_ACTIONPARAMETER PRIMARY KEY (id));

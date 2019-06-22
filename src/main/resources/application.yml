@@ -1,0 +1,19 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  sleuth:
+    sampler:
+      probability: 1f
+  jpa:
+    database: MYSQL
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
+  liquibase:
+    enabled: true
+  datasource: # mysql datasource settings from vault
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/docker_demo?autoReconnect=true
+    username: root
+    password: docker_pass123
