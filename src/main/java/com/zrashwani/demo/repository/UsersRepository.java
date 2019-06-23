@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface UsersRepository extends JpaRepository<Users, Long> {
 
-    @Query(value = "select id, username, description from users order by id desc", nativeQuery = true)
+    @Query(value = "select * from users order by id desc", nativeQuery = true)
     List<Users> getAll();
 }
