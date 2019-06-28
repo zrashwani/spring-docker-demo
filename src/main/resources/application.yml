@@ -14,6 +14,6 @@ spring:
     enabled: true
   datasource: # mysql datasource settings from vault
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/docker_demo?autoReconnect=true
-    username: root
-    password: dockerpass123
+    url: jdbc:mysql://db_mysql:3306/docker_demo?autoReconnect=true
+    username: web_usr
+    password: WebAppPass123

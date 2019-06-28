@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: db/changelog/changelogs/init.changelog.sql
+  - include:
+      file: db/changelog/changelogs/insert-sample-users.sql
