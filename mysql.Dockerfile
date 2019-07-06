@@ -7,7 +7,7 @@
 
 FROM mysql
 
-MAINTAINER Zeid Rashwani <zrashwani@gmail.com>
+LABEL maintainer="Zeid Rashwani <zrashwani@gmail.com>"
 
 ENV MYSQL_DATABASE=docker_demo
 ENV MYSQL_ROOT_PASSWORD=dockerpass123

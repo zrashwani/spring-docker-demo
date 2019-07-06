@@ -7,7 +7,7 @@
 
 FROM maven
 
-MAINTAINER Zeid Rashwani <zrashwani@gmail.com>
+LABEL maintainer="Zeid Rashwani <zrashwani@expedia.com>"
 
 WORKDIR /usr/src/spring-docker-demo
 
