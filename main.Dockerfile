@@ -15,6 +15,6 @@ COPY . /usr/src/spring-docker-demo
 
 EXPOSE 8080
 
-RUN mvn clean install
+RUN mvn clean install -DskipTests
 
 ENTRYPOINT ["mvn", "spring-boot:run"]
