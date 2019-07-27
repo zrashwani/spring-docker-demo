@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: main.Dockerfile
+    image: zrashwani/spring-maven
     ports:
       - "82:8080"
     networks:
@@ -11,10 +12,11 @@ services:
     depends_on:
       - mysql-db
   mysql-db:
-    container_name: db_mysql
+    container_name: db-mysql
     build:
       context: .
       dockerfile: mysql.Dockerfile
+    image: zrashwani/spring-mysql
     networks:
       - demo-compose-network
     volumes:
